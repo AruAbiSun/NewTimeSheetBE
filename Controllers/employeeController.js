@@ -108,7 +108,7 @@ export const forgotPassword = async (req, res) => {
     employee.token = token;
     await employee.save();
 
-    const resetUrl = `http://localhost:5173/reset-password?token=${token}`;
+    const resetUrl = `tourmaline-lebkuchen-4bed6c.netlify.app/reset-password?token=${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL,
