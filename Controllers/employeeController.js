@@ -35,7 +35,7 @@ export const registerEmployee = async (req, res) => {
     });
     await newEmployee.save();
 
-    const resetUrl = `http://localhost:5173/login`;
+    const resetUrl = `tourmaline-lebkuchen-4bed6c.netlify.app/login`;
 
     const mailOptions = {
       from: process.env.EMAIL,
